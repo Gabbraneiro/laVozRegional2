@@ -1,0 +1,7 @@
+{
+  "name": "laVozRegional2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
