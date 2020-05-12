@@ -1,27 +1,69 @@
 #container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
+    font-size: 16px;
+    line-height: 22px;
 
-  color: #8c8c8c;
+    color: #8c8c8c;
 
-  margin: 0;
+    margin: 0;
 }
 
 #container a {
-  text-decoration: none;
+    text-decoration: none;
+}
+#grid-redes {
+    padding: 0;
+}
+#facebook,
+#instagram,
+#twitter,
+#whatsapp {
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+#logo-facebook,
+#logo-instagram,
+#logo-twitter,
+#logo-whatsapp {
+    height: 100%;
+}
+#facebook {
+    background-color: #4267b2;
+}
+#instagram {
+    background-color: #c13584;
+}
+#twitter {
+    background-color: #1da1f2;
+}
+#whatsapp {
+    background-color: #128c7e;
+}
+
+#row-logo-radio {
+    margin-top: 100px;
+}
+#logo-radio img {
+    width: 300px;
+    height: 300px;
+}
+
+#row-buttons {
+    margin-top: 50px;
+    font-size: 75px;
+    color: black;
 }

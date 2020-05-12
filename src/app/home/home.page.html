@@ -1,20 +1,43 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+      <ion-grid id="grid-redes">
+          <ion-row>
+              <ion-col (click)="goTo('facebook')" id="facebook">
+                  <ion-icon id="logo-facebook" name="logo-facebook"></ion-icon>
+              </ion-col>
+              <ion-col (click)="goTo('twitter')" id="twitter">
+                  <ion-icon id="logo-twitter" name="logo-twitter"></ion-icon>
+              </ion-col>
+              <ion-col (click)="goTo('instagram')" id="instagram">
+                  <ion-icon id="logo-instagram" name="logo-instagram"></ion-icon>
+              </ion-col>
+              <ion-col (click)="goTo('whatsapp')" id="whatsapp">
+                  <ion-icon id="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-grid>
+          <ion-row id="row-logo-radio">
+              <ion-col id="logo-radio">
+                  <img src="../../assets/images/logo_radio.png">
+              </ion-col>
+          </ion-row>
+
+          <ion-row id="row-buttons">
+              <ion-col id="button-play" size="3" offset="3">
+                  <ion-icon *ngIf="!isPlaying" (click)="play()" name="play-circle"></ion-icon>
+                  <ion-icon *ngIf="isPlaying" (click)="pause()" name="pause-circle"></ion-icon>
+              </ion-col>
+              <ion-col id="button-mute" size="3">
+                  <ion-icon (click)="unmute()" *ngIf="isMute" name="volume-mute"></ion-icon>
+                  <ion-icon (click)="mute()" *ngIf="!isMute" name="volume-high"></ion-icon>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
   </div>
 </ion-content>
